@@ -1,6 +1,6 @@
 docker build -t marklovely67/multiclient:latest -t marklovely67/multi-client:$SHA -f ./client/Dockerfile ./client
-docker build -t makrlovely67/multi-server:latest -t -t makrlovely67/multi-server:$SHA -f .server/Dockerfile ./server
-docker build -t makrlovely67/multi-worker:latest -t makrlovely67/multi-worker:$SHA -f .worker/Dockerfile ./worker
+docker build -t makrlovely67/multi-server:latest -t -t makrlovely67/multi-server:$SHA -f ./server/Dockerfile ./server
+docker build -t makrlovely67/multi-worker:latest -t makrlovely67/multi-worker:$SHA -f ./worker/Dockerfile ./worker
 
 docker push marklovely67/multi-client:latest
 docker push marklovely67multi-server:latest
